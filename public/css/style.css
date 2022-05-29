@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Homepage */
+
+nav{
+    width: 100%;
+}
+
+#title{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+}
+
+#title > div#info {
+    padding: 6.25rem;
+}
+
+#cityInput{
+    margin: 0 0.3125rem;
+}
+
+@media screen and (max-width: 990px){
+    
+    #title{
+        display: inline-block;
+    }
+    
+    #title .img-container{
+        text-align: center;
+    }
+
+    #title img {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    
+    #title{
+        display: inline-block;
+    }
+    
+    #title .img-container{
+        text-align: center;
+    }
+
+    #title img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+/* weather page */
+
+#main{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.weather-card{
+    width: 50%;
+    margin: auto;
+    margin-top: 6.25rem;
+    margin-bottom: 6.25rem;
+    padding-bottom: 2rem;
+}
+
+.redirect-btn {
+    margin-left: 2rem;
+}
+
+@media screen and (max-width:1024px){
+    .weather-card{
+        width: 100%;
+        margin: 6.25rem 0 6.25rem 0;
+
+    }
+}
+
+@media screen and (max-width:516px){
+    .degree{
+        font-size: 50px;
+        font: weight 900; 
+    }
+}
+
+/* footer */
+
+footer{
+    color: #fff;
+    position: fixed;;
+    bottom: 0;
+    left: 0;
+    background-color: #343a40;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}

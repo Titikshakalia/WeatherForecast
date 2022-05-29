@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: #0275;">
+    <!-- Card -->
+    <div class="card weather-card">
+
+        <!-- Card content -->
+        <div class="card-body pb-3">
+
+          <!-- Title -->
+          <h4 class="card-title font-weight-bold"><%= querr %></h4>
+          <!-- Text -->
+          
+          <p class="card-text"><%= listTitle %>, <%= description %></p> 
+          <div class="d-flex justify-content-between">
+            <p class="display-1 degree"><%= temp %>&deg; C</p>
+            <img src=<%= image %>>
+          </div>
+          <p>Feels like <%=feel%>&deg; C  </p>
+          <div class="d-flex justify-content-between mb-4">
+            <p><i class="fas fa-tint fa-lg text-info pr-2"></i><%= pressure%> mBar Pressure</p>
+            <p><i class="fas fa-leaf fa-lg grey-text pr-2"></i><%=humidity%>%  Humidity</p>
+          </div>
+        
+
+        </div>
+
+        <!-- Go Back Button -->
+        <div>
+          <form action="/" method="GET">
+            <button class="btn btn-outline-primary my-2 my-sm-0 redirect-btn">Search Another City</button>
+            </button>
+          </form>
+        </div>
+
+      </div>
+      <!-- Card -->
+
+
+</body>
+<footer>
+    Made By Titiksha Kalia
+</footer>
+</html>
